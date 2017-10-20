@@ -1,39 +1,359 @@
-@import (less) 'node_modules/normalize.css/normalize.css';
-@import (less) './_media';
-
-// Код для примера
 body {
-    background: black;
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
-.menu {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: red;
+.container {
+	width: 1400px;
+	margin: 0 auto;
+}
 
-    // Стили для всех девайсов пишутся внитри блока:
-    @media @tablet {
-        background: green;
-    }
+header {
+	height: 90px;
+}
 
-    @media @desktop {
-        background: blue;
-    }
+.Shop
+{
+	margin-top: 36px;
+	width: 104px;
+	height: 22px;
+}
+.logo
+{    
+	display: flex;
+	margin: -42px auto;
+	width: 49px;
+	height: 49px;
+}
+h1
+{
+	margin-top: 4px;
+	float: right;
+	font-size: 24px;
+	color: #cc0000;
+}
 
-    // Пример стилей для элемента `.menu__item`
-    &__item {
-        display: inline-block;
-        list-style-type: none;
-    }
 
-    // Пример модификатора `.menu_bottom`
-    &_bottom {
-        background: green;
-    }
+section
+{
+	height: 1000px;
+}
+.polosa
+{
+	height: 51px;
+	width: 100%;
+	border: 1px solid #d9d9d4;
+	background: #f2f2ed;
+}
+nav {
+	float:left;
+	margin-top: -35px;
+}
+.menu
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.menu li{
+	float: left;
+	display: block;
+	margin-right: 5px;
+}
 
-    // Пример переопределения стилей элемента в нижнем меню `.menu_bottom .menu__item`
-    &_bottom &__item {
-        color: #f00;
-    }
+.menu li a {
+	font-size: 16px;			
+	color: #cc0000;
+}
+.nav2
+{
+	margin-top: 51px;
+}
+
+.Man
+{
+	margin-top: 20px;
+}
+
+h2
+{
+	margin-left: 764px;
+	font-size: 36px;
+	color: black;
+	margin-top: -709px;
+}
+
+p
+{
+	font-size: 16px;
+	color: black;
+}
+
+.p1
+{
+	margin-left: 764px;
+	margin-top: -19px;
+	color: #cc0000;
+}
+
+h3
+{
+	font-size: 36px;
+	color: #cc0000;
+	margin-left: 764px;
+	margin-top: 24px;
+}
+
+.p2
+{
+	margin-left: 764px;
+}
+
+.lane2
+{
+	margin-left: 764px;
+	padding: 0;
+	display: flex;
+}
+.kv1
+{
+	text-align: center;
+	height: 65px;
+	width: 65px;
+	border: 1px solid black;
+	background: white;
+	margin-right: 10px;
+}
+
+.kv1_2
+{
+	text-align: center;
+	height: 61px;
+	width: 61px;
+	border: 3px solid red;
+	background: white;
+	margin-right: 10px;
+}
+
+.p3
+{
+
+	margin-top: 24px;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+.p4
+{
+	margin-left: 764px;
+	margin-top: 20px;
+}
+
+.lane3
+{
+	margin-left: 764px;
+	padding: 0;
+	display: flex;
+}
+
+.kva
+{
+	text-align: center;
+	height: 65px;
+	width: 65px;
+	border: 1px solid black;
+	margin-right: 10px;
+}
+.kva.acrive
+{
+	height: 61px;
+	width: 61px;
+	border: 3px solid red;
+}
+.kv3
+{
+	
+	background: #e3d95e;
+}
+
+.kv4
+{
+	
+	background: #a5af96;
+}
+
+.button
+{   
+	margin-top: 44px;
+	margin-left: 764px;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	background: #cc0000;
+	height: 80px;
+	width: 200px;
+}
+
+.try{
+	
+	display: flex;
+	margin-top: 39px;
+}
+.heart
+{ 
+	margin-left: 764px;
+	height: 25px;
+	width: 25px;
+}
+
+.p5
+{
+	color: #999999;
+	margin: auto 7px;
+	font-weight: bold;
+}
+
+footer
+{
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #d9d9d4;
+	background: #f2f2ed;
+	height: 430px;
+}
+
+.p6p7
+{
+	display: flex;
+	margin-top: 60px;
+}
+.p6
+{
+	font-weight: bold;
+}
+.p7
+{
+	font-weight: bold;
+	margin-left: 274px;
+}
+
+.menu2
+{
+	margin: 0;
+	padding: 0;
+	
+}
+
+.menu2 li{
+	display: block;
+	margin-top: 14px;
+}
+
+.menu2 li a
+{
+	color: black;
+	text-decoration: none;
+}
+
+.lane4
+{
+	margin-top: -9px;
+	display: flex;
+}
+
+.menu3
+{
+	margin-left: 55px;
+}
+.menu4
+{
+	margin-left: 40px;
+}
+.menu5
+{
+	margin-left: 84px;
+}
+
+.menu6
+{    
+	margin-top: -20px;
+	margin-left: 100px;
+}
+
+.menu6 li{
+	display: block;
+	text-align: right;
+	margin-top: 24px;
+}
+.log1
+{
+	height: 23px;
+	weight: 45px;
+}
+
+.log2
+{
+	height: 25px;
+	weight: 25px;
+}
+
+.log3
+{
+	height: 23px;
+	weight: 21px;
+}
+
+.lane5
+{
+	display: flex;
+}
+
+.menu7
+{
+	margin-top: -25px;
+	margin-left: 14px;
+}
+
+.menu7 li
+{
+	margin-top: 32px;
+}
+
+.menu8
+{ 
+	text-align: center;
+	margin-top: -20px;
+	margin-left: 110px;
+
+}
+
+.menu8 li
+{
+	margin-top: 18px;
+	display: block;
+}
+
+.log4
+{
+	height: 31px;
+	weight: 16px;
+}
+
+.log5
+{
+	height: 28px;
+	weight: 34px;
+}
+
+.log6
+{
+	height: 31px;
+	weight: 31px;
+}
+
+.polosa2
+{
+	margin-top: 40px;
+	border: 1px solid #d9d9d4;
 }
