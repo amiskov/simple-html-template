@@ -1,5 +1,6 @@
-/* # Setup devices width */
-/* # Variables for mobile first approach and strict ranges */
+@import (less) 'node_modules/normalize.css/normalize.css';
+@import (less) './_media';
+
 body {
   font-family: 'Roboto', sans-serif;
   padding: 0;
@@ -9,76 +10,75 @@ body {
   width: 1400px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .container {
     width: 400px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .container {
     width: 800px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @phone-strict {
   .heder_block {
     margin-top: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+ 
+ 
     display: flex;
   }
 }
+@media @tablet-strict {
 .heder_block {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+}
 }
 header {
   height: 90px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   header {
     height: 45px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   header {
     height: 70px;
   }
 }
 .Shop_logo {
-  margin-top: 36px;
+  display: flex;
+  margin: -42px auto;
   width: 104px;
   height: 22px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Shop_logo {
     margin: 7px;
     width: 72px;
     height: 15px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Shop_logo {
     margin-top: 9px;
   }
 }
 .Oggeto_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: -42px auto;
   width: 49px;
   height: 49px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Oggeto_logo {
     margin: 0 auto;
     width: 34px;
     height: 34px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Oggeto_logo {
     margin: 0 auto;
   }
@@ -89,12 +89,12 @@ header {
   font-size: 24px;
   color: #cc0000;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Phone_contact {
     font-size: 15px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Phone_contact {
     margin-top: 0px;
   }
@@ -102,12 +102,12 @@ header {
 section {
   height: 950px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   section {
     height: 780px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   section {
     height: 700px;
   }
@@ -125,7 +125,7 @@ section {
   height: 36px;
   float: right;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Form-wrapper {
     width: 36px;
     height: 36px;
@@ -136,7 +136,7 @@ section {
   height: 34px;
   border: none;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Form-wrapper input {
     width: 36px;
   }
@@ -147,7 +147,7 @@ section {
   float: right;
   margin-top: -33px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Icon_search {
     margin-right: 10px;
   }
@@ -159,8 +159,6 @@ nav {
 .Main_navigation {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .Main_navigation li {
@@ -175,12 +173,12 @@ nav {
 .Local_navigation {
   margin-top: 50px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Local_navigation {
     margin-top: 14px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Local_navigation {
     margin-top: 30px;
   }
@@ -194,14 +192,14 @@ nav {
 .Tshitrs img {
   position: absolute;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Tshitrs img {
     margin-top: 80px;
     width: 400px;
     height: 400px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Tshitrs img {
     width: 500px;
     height: 500px;
@@ -231,7 +229,7 @@ nav {
   color: black;
   margin-top: -7px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Product_name {
     border: 1px solid #d9d9d4;
     background: #f2f2ed;
@@ -241,7 +239,7 @@ nav {
     margin-top: -10px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Product_name {
     margin-left: 520px;
     font-size: 34px;
@@ -256,13 +254,13 @@ p {
   margin-top: -19px;
   color: #cc0000;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Product_description {
     text-align: center;
     margin-left: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Product_description {
     margin-left: 520px;
   }
@@ -273,7 +271,7 @@ p {
   margin-left: 764px;
   margin-top: 24px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Product_price {
     float: right;
     font-size: 30px;
@@ -281,7 +279,7 @@ p {
     margin-top: 430px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Product_price {
     font-size: 34px;
     margin-left: 520px;
@@ -291,13 +289,13 @@ p {
 .Size {
   margin-left: 764px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Size {
     margin-left: 0px;
     margin-top: 420px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Size {
     margin-top: -30px;
     margin-left: 520px;
@@ -306,17 +304,15 @@ p {
 .Size_line_block {
   margin-left: 764px;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Size_line_block {
     margin-top: -10px;
     margin-left: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Size_line_block {
     margin-left: 520px;
   }
@@ -329,7 +325,7 @@ p {
   background: white;
   margin-right: 10px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Size_form {
     height: 45px;
     width: 45px;
@@ -343,7 +339,7 @@ p {
   background: white;
   margin-right: 10px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Size_form_active {
     height: 41px;
     width: 41px;
@@ -353,7 +349,7 @@ p {
   font-size: 36px;
   margin-top: 10px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Size_sign {
     margin-top: 5px;
     font-size: 30px;
@@ -363,13 +359,13 @@ p {
   margin-left: 764px;
   margin-top: 20px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Color {
     margin-left: 0px;
     margin-top: 10px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Color {
     margin-left: 520px;
     margin-top: 10px;
@@ -378,17 +374,15 @@ p {
 .Color_line_block {
   margin-left: 764px;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Color_line_block {
     margin-top: -10px;
     margin-left: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Color_line_block {
     margin-left: 520px;
   }
@@ -401,7 +395,7 @@ p {
   background: white;
   margin-right: 10px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Change_color_one {
     height: 45px;
     width: 45px;
@@ -412,7 +406,7 @@ p {
   width: 61px;
   border: 3px solid red;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Change_color_one.active {
     height: 41px;
     width: 41px;
@@ -426,7 +420,7 @@ p {
   background: #a5af96;
   margin-right: 10px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Change_color_two {
     height: 45px;
     width: 45px;
@@ -437,7 +431,7 @@ p {
   width: 61px;
   border: 3px solid red;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Change_color_two.active {
     height: 41px;
     width: 41px;
@@ -451,7 +445,7 @@ p {
   background: #e3d95e;
   margin-right: 10px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Change_color_three {
     height: 45px;
     width: 45px;
@@ -462,7 +456,7 @@ p {
   width: 61px;
   border: 3px solid red;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Change_color_three.active {
     height: 41px;
     width: 41px;
@@ -478,7 +472,7 @@ p {
   height: 80px;
   width: 200px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Button_buy {
     margin-top: -90px;
     float: right;
@@ -487,25 +481,23 @@ p {
     width: 150px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Button_buy {
     margin-top: 24px;
     margin-left: 520px;
   }
 }
 .Sign_line_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 39px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Sign_line_block {
     margin-top: -18px;
     float: right;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Sign_line_block {
     margin-top: 5px;
     margin-left: 10px;
@@ -516,14 +508,14 @@ p {
   height: 25px;
   width: 25px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Sign_heart {
     margin-left: 0px;
     height: 20px;
     width: 20px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Sign_heart {
     margin-left: 520px;
   }
@@ -533,7 +525,7 @@ p {
   margin: auto 7px;
   font-weight: bold;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Hold_over {
     margin: auto 5px;
   }
@@ -545,29 +537,27 @@ footer {
   background: #f2f2ed;
   height: 430px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   footer {
     height: 600px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   footer {
     height: 440px;
   }
 }
 .Footer_topic_bold {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
   font-weight: bold;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Footer_topic_bold {
     margin-top: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Footer_topic_bold {
     margin-top: 0px;
   }
@@ -578,7 +568,7 @@ footer {
 .Right_footer_topic_bold {
   margin-left: 285px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Right_footer_topic_bold {
     margin-left: 33px;
   }
@@ -597,11 +587,9 @@ footer {
 }
 .Right_column_footer_topic {
   margin-top: -9px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Right_column_footer_topic {
     margin-top: -15px;
   }
@@ -609,7 +597,7 @@ footer {
 .Second_column_footer_topic {
   margin-left: 55px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Second_column_footer_topic {
     margin-left: 10px;
   }
@@ -617,7 +605,7 @@ footer {
 .Third_column_footer_topic {
   margin-left: 40px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Third_column_footer_topic {
     margin-left: 20px;
   }
@@ -625,7 +613,7 @@ footer {
 .Fourht_column_footer_topic {
   margin-left: 84px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Fourht_column_footer_topic {
     margin-left: 20px;
   }
@@ -634,13 +622,13 @@ footer {
   margin-top: -20px;
   margin-left: 100px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Fifth_signs_column_footer_topic {
     margin-top: 225px;
     margin-left: -420px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Fifth_signs_column_footer_topic {
     margin-top: 140px;
     margin-left: -630px;
@@ -651,7 +639,7 @@ footer {
   text-align: right;
   margin-top: 24px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Fifth_signs_column_footer_topic li {
     margin-top: 18px;
   }
@@ -669,21 +657,19 @@ footer {
   weight: 21px;
 }
 .lane5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .Sixth_column_footer_topic {
   margin-top: -25px;
   margin-left: 14px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Sixth_column_footer_topic {
     margin-top: 225px;
     margin-left: 10px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Sixth_column_footer_topic {
     margin-top: 140px;
   }
@@ -691,7 +677,7 @@ footer {
 .Sixth_column_footer_topic li {
   margin-top: 32px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Sixth_column_footer_topic li {
     margin-top: 22px;
   }
@@ -701,16 +687,16 @@ footer {
   margin-top: -20px;
   margin-left: 110px;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Eight_signs_column_footer_topic {
-    display: -webkit-box;
-    display: -ms-flexbox;
+ 
+ 
     display: flex;
     margin-top: 410px;
     margin-left: -300px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Eight_signs_column_footer_topic {
     margin-top: 140px;
     margin-left: 0px;
@@ -720,13 +706,13 @@ footer {
   margin-top: 18px;
   display: block;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Eight_signs_column_footer_topic li {
     margin-top: 0px;
     margin-left: 20px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Eight_signs_column_footer_topic li {
     margin-top: 20px;
   }
@@ -747,12 +733,12 @@ footer {
   margin-top: 40px;
   border: 1px solid #d9d9d4;
 }
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media @phone-strict {
   .Line_inside_footer {
     margin-top: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media @tablet-strict {
   .Line_inside_footer {
     margin-top: 0px;
   }
