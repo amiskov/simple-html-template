@@ -25,3 +25,25 @@ $(".Change_color_three").on("click", function () {
 	$(".Color_one").toggleClass("Color_one_invisible")
 	$(".Color_two_invisible").removeClass("Color_two")
 });
+
+$(".Size_form_M active").on("click", function () {
+	$(this).toggleClass("Size_form_M")
+	$(".Size_form_S").removeClass("active") 
+	$(".Size_form_L").removeClass("active") 
+});
+
+$(".Size_form_M").on("click", function () {
+	$(this).toggleClass("active")
+	$(".Size_form_S").removeClass("active") 
+	$(".Size_form_L").removeClass("active") 
+});
+$(".Size_form_S").on("click", function () {
+	$(this).toggleClass("active")
+	$(".Size_form_M").removeClass("active") 
+	$(".Size_form_L").removeClass("active")
+});
+$(".Size_form_L").on("click", function () {
+	$(this).toggleClass("active")
+	$(".Size_form_M").removeClass("active") 
+	$(".Size_form_S").removeClass("active")
+});
