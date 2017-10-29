@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
+let sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync');
 const autoprefixer = require('gulp-autoprefixer');
 const rename       = require('gulp-rename');
@@ -23,7 +24,9 @@ gulp.task('livereload', () => {
 
 gulp.task('styles', () => {
     gulp.src('src/less/main.less')
+        .pipe(sourcemaps.init())
         .pipe(less())
+        .pipe(sourcemaps.write())
         .pipe(autoprefixer())
         .pipe(gulp.dest('./dist/css'));
 });

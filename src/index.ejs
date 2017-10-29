@@ -33,24 +33,24 @@
 				</form>
 				<img src="img/Search.svg" class="Icon_search"></img>
 
-				<% const menu = ['LISP', 'OCaml', 'JavaScript', 'Python', 'PHP'] %>
+				<% const Main_navigation = ['LISP', 'OCaml', 'JavaScript', 'Python', 'PHP'] %>
 				<nav>
 					<ul class="Main_navigation">
-						<% menu.forEach(function(item) { %>
+						<% Main_navigation.forEach(function(navigation) { %>
                         <li>
-                <a href="#"><%= item %></a>
+                <a href="#"><%= navigation %></a>
             </li>
             <% }); %>
 					</ul>
 				</nav>
 
- <% const menu2 = ['LISP', 'Одежда', 'Футболки'] %>
+ <% const Local_navigation = ['LISP', 'Одежда', 'Футболки'] %>
 				<ul class="Main_navigation">
 					<div class="Local_navigation">
-						<% menu2.forEach(function(item, index) { %>
+						<% Local_navigation.forEach(function(item, index) { %>
 						<li>
 							 <a href="#"><%= item %></a>
-							  <% if(index < (menu2.length - 1)) { %>
+							  <% if(index < (Local_navigation.length - 1)) { %>
            <span>/</span>
         <% } %>
 						</li>
@@ -98,74 +98,66 @@
 		</section>
 		<footer class="footer">
 			<div class="container">
-				<div class="Footer_topic_bold">
+				<div class="Footer_title_navigation">
 					<p class="Footer_p"> Сервис и поддержка </p>
-					<p class="Right_footer_topic_bold Footer_p"> О компании </p>
+					<p class="Footer_title_navigation2 Footer_p"> О компании </p>
 				</div>
               
-              <% const menu3 = ['Как сделать заказ', 'Возврат товара', 'Публичная оферта', 'Доставка'] %>
-				<div class="Right_column_footer_topic">
+              <% const Service_Support = ['Как сделать заказ', 'Возврат товара', 'Публичная оферта', 'Доставка'] %>
+				<div class="Service_Support">
 					<ul class="Footer_navigation">
-						<% menu3.forEach(function(item) { %>
+						<% Service_Support.forEach(function(point) { %>
 						<li>
-							<a href="#" class="menu__link"><%= item %></a>
+							<a href="#" class="menu__link"><%= point %></a>
 						</li>
 						<% }); %>
 					</ul>
 
-					 <% const menu4 = ['Способы оплаты', 'Правила продажи', 'Возврат денежных средств', 'Вопросы и ответы'] %>
-					<div class="Second_column_footer_topic">
+					 <% const Column2_Service_Support = ['Способы оплаты', 'Правила продажи', 'Возврат денежных средств', 'Вопросы и ответы'] %>
+					<div class="Column2_Service_Support">
 						<ul class="Footer_navigation">
-							<% menu4.forEach(function(item) { %>
+							<% Column2_Service_Support.forEach(function(point) { %>
 							<li>
-							   <a href="#"><%= item %></a>
+							   <a href="#"><%= point %></a>
 							</li>
 							<% }); %>
 						</ul>
 					</div>
-					<% const menu5 = ['О нас', 'Контакты', 'Вакансии', 'Партнерам'] %>
-					<div class="Third_column_footer_topic">
+					<% const About_company = ['О нас', 'Контакты', 'Вакансии', 'Партнерам'] %>
+					<div class="About_company">
 						<ul class="Footer_navigation">
-							<% menu5.forEach(function(item) { %>
+							<% About_company.forEach(function(point) { %>
 							<li>
-					<a href="#"><%= item %></a>
+					<a href="#"><%= point %></a>
 							</li>
 							<% }); %>
 						</ul>
 					</div>
-					<% const menu6 = ['Сертификаты', 'Преимущества', 'Наши скидки'] %>
-					<div class="Fourht_column_footer_topic">
+					<% const Column2_About_company = ['Сертификаты', 'Преимущества', 'Наши скидки'] %>
+					<div class="Column2_About_company">
 						<ul class="Footer_navigation">
-							 <% menu6.forEach(function(item) { %>
+							 <% Column2_About_company.forEach(function(point) { %>
 							<li>
-								 <a href="#"><%= item %></a>
+								 <a href="#"><%= point %></a>
 							</li>
 							  <% }); %>
 						</ul>
 					</div>
-					<div class="lane5">
-						<ul class="Fifth_signs_column_footer_topic">
-							<li>
-								<img class="Delivery_log" src="img/delivery.svg"></img>
-							</li>
-							<li>
-								<img class="Heart_log" src="img/heart.svg"></img>
-							</li>
-							<li>
-								<img class="Cup_log" src="img/cup.svg"></img>
-							</li>
-						</ul>
-						<% const Sixth_column_footer_topic = ['бесплатная доставка от 4000 ₽', 'пробники в подарок при каждой покупке', 'акции и подарки за покупку'] %>
-						<div class="Sixth_column_footer_topic">
+						
+						<div class="Bonuses">
 							<ul class="Footer_navigation">
-								<% Sixth_column_footer_topic.forEach(function(item) { %>
 								<li>
-									    <a href="#"><%= item %></a>
+									 <a href="#"><img class="Delivery_log" src="img/delivery.svg"></img><span class="Fix_height"> бесплатная доставка от 4000 ₽ </span> </a>
+									</li>
+									<li>
+									 <a href="#"><img class="Heart_log" src="img/heart.svg"></img><span class="Fix_height">пробники в подарок при каждой покупке</span></a>
+									</li>
+									<li>
+									 <a href="#"><img class="Cup_log" src="img/cup.svg"></img><span class="Fix_height">акции и подарки за покупку</span></a>
 								</li>
-								<% }); %>
 							</div>
 						</ul>
-						<ul class="Eight_signs_column_footer_topic">
+						<ul class="Social_network_signs">
 							<li>
 								<a href="#">
 									<img class="Facebook_log" src="img/facebook.svg"></img></a>
@@ -179,16 +171,17 @@
 							</ul>
 						</div>
 					</div>
-					<div class="Line_inside_footer">
-					</div>
+					<div class="Line_inside_footer"></div>
+					<div class="container">
 					<% const InformationAboutShop = ['2005-2017 © 7h35h0p.ru — модный интернет-магазин одежды, обуви и аксессуаров.', 'Все права защищены. Доставка по всей России!'] %>
 					<ul class="Footer_navigation">
-						 <% InformationAboutShop.forEach(function(item) { %>
+						 <% InformationAboutShop.forEach(function(point) { %>
 						<li>
-							<p class="Footer_p_2"><%= item %></p>
+							<p class="Footer_p_2"><%= point %></p>
 						</li>
 						<% }); %>
 					</ul>
+				</div>
 				</div>
 			</footer>
 
