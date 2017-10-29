@@ -7,6 +7,12 @@ body {
     margin: 0;
 }
 
+.b
+{
+    font-size: 16px;
+    color: black;
+}
+
 .container {
     width: 1400px;
     margin: 0 auto;
@@ -36,13 +42,13 @@ body {
     }
 }
 @media @tablet-strict {
-    .heder_block {
+    .hederBlock {
         margin-top: 30px;
         display: flex;
     }
 }
 
-header {
+.header {
     height: 90px;
     @media @phonex-strict {
         height: 45px;
@@ -53,103 +59,70 @@ header {
     @media @tablet-strict {
         height: 70px;
     }
-}
 
-.Shop_logo {
-    display: flex;
-    margin-top: 30px;
-    width: 104px;
-    height: 22px;
-    @media @phonex-strict {
-        margin-top: 11px;
-        width: 72px;
-        height: 15px;
+    &_shopLogo {
+        display: flex;
+        margin-top: 30px;
+        width: 104px;
+        height: 22px;
+        @media @phonex-strict {
+            margin-top: 11px;
+            width: 72px;
+            height: 15px;
+        }
+        @media @phone-strict {
+            margin-top: 11px;
+            width: 72px;
+            height: 15px;
+        }
+        @media @tablet-strict {
+            margin-top: 9px;
+        }
     }
-    @media @phone-strict {
-        margin-top: 11px;
-        width: 72px;
-        height: 15px;
-    }
-    @media @tablet-strict {
-        margin-top: 9px;
-    }
-}
 
-.Oggeto_logo {
-    display: flex;
-    margin: -37px 44.6%;
-    width: 49px;
-    height: 49px;
-    @media @phonex-strict {
-        margin: 0 -4%;
-        width: 34px;
-        height: 34px;
+    &_OggetoLogo {
+        display: flex;
+        margin: -37px 44.6%;
+        width: 49px;
+        height: 49px;
+        @media @phonex-strict {
+            margin: 0 -4%;
+            width: 34px;
+            height: 34px;
+        }
+        @media @phone-strict {
+            margin: 0 7%;
+            width: 34px;
+            height: 34px;
+        }
+        @media @tablet-strict {
+            margin: 0 22%;
+        }
     }
-    @media @phone-strict {
-        margin: 0 7%;
-        width: 34px;
-        height: 34px;
-    }
-    @media @tablet-strict {
-        margin: 0 22%;
-    }
-}
 
-.Phone_contact {
-    margin-top: 0;
-    float: right;
-    font-size: 24px;
-    color: #c00;
-    @media @phonex-strict {
-        margin-left: 105px;
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    @media @phone-strict {
-        margin-left: 103px;
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    @media @tablet-strict {
-        margin-left: 62px;
-        margin-top: 4px;
-    }
-}
-
-section {
-    height: 956px;
-    @media @phonex-strict {
-        height: 700px;
-    }
-    @media @phone-strict {
-        height: 780px;
-    }
-    @media @tablet-strict {
-        height: 700px;
-    }
-    @media @desktop-strict{
-        height: 780px;
-    }
-}
-
-.Line_under_header {
-    margin-top: -38px;
-    height: 51px;
-    width: 100%;
-    border: 1px solid #d9d9d4;
-    background: #f2f2ed;
-    @media @phonex-strict {
+    &_PhoneContact {
         margin-top: 0;
-    }
-    @media @phone-strict {
-        margin-top: 0;
-    }
-    @media @tablet-strict {
-        margin-top: 0;
+        float: right;
+        font-size: 24px;
+        color: #c00;
+        @media @phonex-strict {
+            margin-left: 105px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        @media @phone-strict {
+            margin-left: 103px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        @media @tablet-strict {
+            margin-left: 62px;
+            margin-top: 4px;
+        }
     }
 }
 
-.Form-wrapper {
+.FormWrapper {
     border: 1px solid #d9d9d4;
     margin-top: -46px;
     width: 278px;
@@ -163,228 +136,276 @@ section {
         width: 36px;
         height: 36px;
     }
+
+    input {
+        width: 278px;
+        height: 34px;
+        border: none;
+        @media @phonex-strict {
+            width: 34px;
+        }
+        @media @phone-strict {
+            width: 36px;
+        }
+    }
+
+    &_IconSearch {
+        width: 16px;
+        height: 16px;
+        float: right;
+        margin-top: -33px;
+        @media @phonex-strict {
+            margin-right: 8px;
+        }
+        @media @phone-strict {
+            margin-right: 10px;
+        }
+    }
 }
 
-.Form-wrapper input {
-    width: 278px;
-    height: 34px;
-    border: none;
+.Section {
+    height: 956px;
     @media @phonex-strict {
-        width: 34px;
+        height: 700px;
     }
     @media @phone-strict {
-        width: 36px;
-    }
-}
-
-.Icon_search {
-    width: 16px;
-    height: 16px;
-    float: right;
-    margin-top: -33px;
-    @media @phonex-strict {
-        margin-right: 8px;
-    }
-    @media @phone-strict {
-        margin-right: 10px;
-    }
-}
-
-nav {
-    float: left;
-    margin-top: -35px;
-}
-
-.Main_navigation {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.Main_navigation li {
-    float: left;
-    display: block;
-    margin-right: 20px;
-    @media @phonex-strict {
-        margin-right: 8px;
-    }
-}
-
-.Main_navigation li a {
-    font-size: 16px;
-    color: #c00;
-}
-
-.Local_navigation {
-    margin-top: 50px;
-    @media @phonex-strict {
-        margin-top: 14px;
-    }
-    @media @phone-strict {
-        margin-top: 14px;
+        height: 780px;
     }
     @media @tablet-strict {
-        margin-top: 30px;
+        height: 700px;
+    }
+    @media @desktop-strict{
+        height: 780px;
+    }
+
+    &_LineUnderHeader {
+        margin-top: -38px;
+        height: 51px;
+        width: 100%;
+        border: 1px solid #d9d9d4;
+        background: #f2f2ed;
+        @media @phonex-strict {
+            margin-top: 0;
+        }
+        @media @phone-strict {
+            margin-top: 0;
+        }
+        @media @tablet-strict {
+            margin-top: 0;
+        }
+    }
+
+    &_ProductName {
+        margin-left: 764px;
+        font-size: 36px;
+        color: black;
+        margin-top: -7px;
+        @media @phonex-strict {
+            border: 1px solid #d9d9d4;
+            background: #f2f2ed;
+            text-align: center;
+            margin-left: 0;
+            font-size: 25px;
+            margin-top: -10px;
+        }
+        @media @phone-strict {
+            border: 1px solid #d9d9d4;
+            background: #f2f2ed;
+            text-align: center;
+            margin-left: 0;
+            font-size: 30px;
+            margin-top: -10px;
+        }
+        @media @tablet-strict {
+            margin-left: 520px;
+            font-size: 34px;
+        }
+        @media @desktop-strict {
+            margin-left: 570px;
+            font-size: 34px;
+        }
+    }
+
+    &_ProductDescription {
+        margin-left: 764px;
+        margin-top: -19px;
+        @media @phonex-strict {
+            margin-top: -15px;
+            text-align: center;
+            margin-left: 0;
+        }
+        @media @phone-strict {
+            text-align: center;
+            margin-left: 0;
+        }
+        @media @tablet-strict {
+            margin-left: 520px;
+        }
+        @media @desktop-strict {
+            margin-left: 570px;
+        }
+    }
+
+    &_ProductPrice {
+        font-size: 36px;
+        color: #c00;
+        margin-left: 764px;
+        margin-top: 24px;
+        @media @phonex-strict {
+            float: right;
+            font-size: 25px;
+            margin-left: 0;
+            margin-top: 338px;
+        }
+        @media @phone-strict {
+            float: right;
+            font-size: 30px;
+            margin-left: 0;
+            margin-top: 430px;
+        }
+        @media @tablet-strict {
+            font-size: 34px;
+            margin-left: 520px;
+            margin-top: -10px;
+        }
+        @media @desktop-strict {
+            margin-left: 570px;
+            margin-top: -10px;
+        }
+    }
+
+    &_Size {
+        margin-top: -10px;
+        margin-left: 764px;
+        @media @phonex-strict {
+            margin-left: 0;
+            margin-top: 333px;
+        }
+        @media @phone-strict {
+            margin-left: 0;
+            margin-top: 420px;
+        }
+        @media @tablet-strict {
+            margin-top: -30px;
+            margin-left: 520px;
+        }
+        @media @desktop-strict {
+            margin-left: 570px;
+            margin-top: -30px;
+        }
+    }
+
+    &_Color {
+        margin-left: 764px;
+        margin-top: 35px;
+        @media @phonex-strict {
+            margin-left: 0;
+            margin-top: 8px;
+        }
+        @media @phone-strict {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        @media @tablet-strict {
+            margin-left: 520px;
+            margin-top: 10px;
+        }
+        @media @desktop-strict {
+            margin-left: 570px;
+            margin-top: 12px;
+        }
     }
 }
 
-.Local_navigation li {
-    margin-right: 4px;
+.Nav {
+    float: left;
+    margin-top: -35px;
+
+
+    &_MainNavigation {
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+            float: left;
+            display: block;
+            margin-right: 20px;
+            @media @phonex-strict {
+                margin-right: 8px;
+            }
+        }
+
+        a {
+            font-size: 16px;
+            color: #c00;
+        }
+
+        &_LocalNavigation {
+            margin-top: 50px;
+            @media @phonex-strict {
+                margin-top: 14px;
+            }
+            @media @phone-strict {
+                margin-top: 14px;
+            }
+            @media @tablet-strict {
+                margin-top: 30px;
+            }
+
+            li {
+                margin-right: 4px;
+            }
+        }
+    }
 }
+
 
 .Tshitrs {
     margin-top: 20px;
+
+    img {
+        position: absolute;
+        @media @phonex-strict {
+            margin-top: 88px;
+            width: 320px;
+            height: 320px;
+        }
+        @media @phone-strict {
+            margin-top: 80px;
+            width: 400px;
+            height: 400px;
+        }
+        @media @tablet-strict {
+            width: 500px;
+            height: 500px;
+        }
+        @media @desktop-strict {
+            width: 550px;
+            height: 550px;
+        }
+    }
 }
 
-.Tshitrs img {
-    position: absolute;
-    @media @phonex-strict {
-        margin-top: 88px;
-        width: 320px;
-        height: 320px;
-    }
-    @media @phone-strict {
-        margin-top: 80px;
-        width: 400px;
-        height: 400px;
-    }
-    @media @tablet-strict {
-        width: 500px;
-        height: 500px;
-    }
-    @media @desktop-strict {
-        width: 550px;
-        height: 550px;
-    }
-}
-
-.Color_three_invisible {
+.Tshitrs_ColorThree-invisible {
     opacity: 0;
 }
 
-.Color_three {
+.Tshitrs_ColorThree {
     opacity: 1;
 }
 
-.Color_two_invisible {
+.Tshitrs_ColorTwo-invisible{
     opacity: 0;
 }
 
-.Color_two {
+.Tshitrs_ColorTwo {
     opacity: 1;
-}
-
-.Color_one_invisible {
-    opacity: 0;
-}
-
-.Color_one {
-    opacity: 1;
-}
-
-.Product_name {
-    margin-left: 764px;
-    font-size: 36px;
-    color: black;
-    margin-top: -7px;
-    @media @phonex-strict {
-        border: 1px solid #d9d9d4;
-        background: #f2f2ed;
-        text-align: center;
-        margin-left: 0;
-        font-size: 25px;
-        margin-top: -10px;
-    }
-    @media @phone-strict {
-        border: 1px solid #d9d9d4;
-        background: #f2f2ed;
-        text-align: center;
-        margin-left: 0;
-        font-size: 30px;
-        margin-top: -10px;
-    }
-    @media @tablet-strict {
-        margin-left: 520px;
-        font-size: 34px;
-    }
-    @media @desktop-strict {
-        margin-left: 570px;
-        font-size: 34px;
-    }
 }
 
 p {
     font-size: 16px;
     color: black;
-}
-
-.Product_description {
-    margin-left: 764px;
-    margin-top: -19px;
-    @media @phonex-strict {
-        margin-top: -15px;
-        text-align: center;
-        margin-left: 0;
-    }
-    @media @phone-strict {
-        text-align: center;
-        margin-left: 0;
-    }
-    @media @tablet-strict {
-        margin-left: 520px;
-    }
-    @media @desktop-strict {
-        margin-left: 570px;
-    }
-}
-
-.Product_price {
-    font-size: 36px;
-    color: #c00;
-    margin-left: 764px;
-    margin-top: 24px;
-    @media @phonex-strict {
-        float: right;
-        font-size: 25px;
-        margin-left: 0;
-        margin-top: 338px;
-    }
-    @media @phone-strict {
-        float: right;
-        font-size: 30px;
-        margin-left: 0;
-        margin-top: 430px;
-    }
-    @media @tablet-strict {
-        font-size: 34px;
-        margin-left: 520px;
-        margin-top: -10px;
-    }
-    @media @desktop-strict {
-        margin-left: 570px;
-        margin-top: -10px;
-    }
-}
-
-.Size {
-    margin-top: -10px;
-    margin-left: 764px;
-    @media @phonex-strict {
-        margin-left: 0;
-        margin-top: 333px;
-    }
-    @media @phone-strict {
-        margin-left: 0;
-        margin-top: 420px;
-    }
-    @media @tablet-strict {
-        margin-top: -30px;
-        margin-left: 520px;
-    }
-    @media @desktop-strict {
-        margin-left: 570px;
-        margin-top: -30px;
-    }
 }
 
 .Size_line_block {
@@ -520,27 +541,6 @@ p {
     @media @phone-strict {
         margin-top: 5px;
         font-size: 30px;
-    }
-}
-
-.Color {
-    margin-left: 764px;
-    margin-top: 35px;
-    @media @phonex-strict {
-        margin-left: 0;
-        margin-top: 8px;
-    }
-    @media @phone-strict {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-    @media @tablet-strict {
-        margin-left: 520px;
-        margin-top: 10px;
-    }
-    @media @desktop-strict {
-        margin-left: 570px;
-        margin-top: 12px;
     }
 }
 
@@ -744,17 +744,17 @@ p {
     }
 }
 
-footer {
+.Footer {
     margin: 0;
     padding: 0;
     border: 1px solid #d9d9d4;
     background: #f2f2ed;
     height: 430px;
     @media @phonex-strict {
-        height: 340px;
+        height: 380px;
     }
     @media @phone-strict {
-        height: 430px;
+        height: 400px;
     }
     @media @tablet-strict {
         height: 440px;
@@ -763,38 +763,126 @@ footer {
     @media @desktop-strict {
         height: 290px;
     }
+
+    &_TitleNavigation {
+        display: flex;
+        margin-top: 43px;
+        font-weight: bold;
+        @media @phonex-strict {
+            margin-top: 0;
+        }
+        @media @phone-strict {
+            margin-top: 0;
+        }
+        @media @tablet-strict {
+            margin-top: 0;
+        }
+        @media @desktop-strict {
+            margin-top: 0;
+        }
+    }
+
+    &_TitleNavigation2 {
+        margin-left: 274px;
+        @media @phonex-strict {
+            margin-left: 80px;
+        }
+        @media @phone-strict {
+            margin-left: 131px;
+        }
+        @media @desktop-strict {
+            margin-left: 190px
+        }
+    }
+
+    &_ServiceSupport {
+        margin-top: -4px;
+        display: flex;
+        @media @phonex-strict {
+            margin-top: -15px;
+        }
+        @media @phone-strict {
+            margin-top: -15px;
+        }
+    }
+
+    &_Column2ServiceSupport {
+        margin-left: 51px;
+        @media @phonex-strict {
+            margin-left: 5px;
+        }
+        @media @phone-strict {
+            margin-left: 10px;
+        }
+        @media @desktop-strict {
+            margin-left: 30px;
+        }
+    }
+
+    &_AboutCompany {
+        margin-left: 75px;
+        @media @phonex-strict {
+            margin-left: 8px;
+        }
+        @media @phone-strict {
+            margin-left: 10px;
+        }
+        @media @desktop-strict {
+            margin-left: 30px;
+        }
+    }
+
+    &_Column2AboutCompany {
+        margin-left: 102px;
+        @media @phonex-strict {
+            margin-left: 0;
+        }
+        @media @phone-strict {
+            margin-left: 5px;
+        }
+        @media @desktop-strict {
+            margin-left: 30px;
+        }
+    }
+
+    &_Deliverylog {
+        height: 24px;
+        width: 60px;
+        @media @phonex-strict {
+            height: 20px;
+            width: 40px;
+        }
+    }
+
+    &_Heartlog {
+        height: 25px;
+        width: 60px;
+        @media @phonex-strict {
+            height: 20px;
+            width: 40px;
+        }
+    }
+
+    &_Cuplog {
+        height: 25px;
+        width: 60px;
+        @media @phonex-strict {
+            height: 20px;
+            width: 40px;
+        }
+    }
+
+    &_FixHeight {
+        display: flex;
+        margin-top: -22px;
+        margin-left: 60px;
+        @media @phonex-strict {
+            margin-left: 40px;
+            margin-top: -19px;
+        }
+    }
 }
 
-.Footer_title_navigation {
-    display: flex;
-    margin-top: 43px;
-    font-weight: bold;
-    @media @phonex-strict {
-        margin-top: 0;
-    }
-    @media @phone-strict {
-        margin-top: 0;
-    }
-    @media @tablet-strict {
-        margin-top: 0;
-    }
-    @media @desktop-strict {
-        margin-top: 0;
-    }
-}
-
-.Footer_title_navigation2 {
-    margin-left: 274px;
-    @media @phonex-strict {
-        margin-left: 80px;
-    }
-    @media @phone-strict {
-        margin-left: 131px;
-    }
-    @media @desktop-strict {
-        margin-left: 190px
-    }
-}
 @media @phonex-strict {
     .Footer_p{
         font-size: 13px;
@@ -804,102 +892,25 @@ footer {
 .Footer_navigation {
     margin: 0;
     padding: 0;
-}
 
-.Footer_navigation li {
-    display: block;
-    margin-top: 7px;
-    @media @phonex-strict {
-        margin-top: 4px;
+    li {
+        display: block;
+        margin-top: 7px;
+        @media @phonex-strict {
+            margin-top: 4px;
+        }
     }
-}
 
-.Footer_navigation li a {
-    color: black;
-    text-decoration: none;
-    font-size: 14px;
-    @media @phonex-strict {
-        font-size: 9px;
-    }
-    @media @phone-strict {
-        font-size: 11px;
-    }
-}
-
-.Service_Support {
-    margin-top: -4px;
-    display: flex;
-    @media @phonex-strict {
-        margin-top: -15px;
-    }
-    @media @phone-strict {
-        margin-top: -15px;
-    }
-}
-
-.Column2_Service_Support {
-    margin-left: 51px;
-    @media @phonex-strict {
-        margin-left: 5px;
-    }
-    @media @phone-strict {
-        margin-left: 10px;
-    }
-    @media @desktop-strict {
-        margin-left: 30px;
-    }
-}
-
-.About_company {
-    margin-left: 75px;
-    @media @phonex-strict {
-        margin-left: 8px;
-    }
-    @media @phone-strict {
-        margin-left: 10px;
-    }
-    @media @desktop-strict {
-        margin-left: 30px;
-    }
-}
-
-.Column2_About_company {
-    margin-left: 102px;
-    @media @phonex-strict {
-        margin-left: 0;
-    }
-    @media @phone-strict {
-        margin-left: 5px;
-    }
-    @media @desktop-strict {
-        margin-left: 30px;
-    }
-}
-
-.Delivery_log {
-    height: 24px;
-    width: 60px;
-    @media @phonex-strict {
-        height: 20px;
-        width: 40px;
-    }
-}
-
-.Heart_log {
-    height: 25px;
-    width: 60px;
-    @media @phonex-strict {
-        height: 20px;
-        width: 40px;
-    }
-}
-
-.Cup_log {
-    height: 25px;
-    width: 60px;
-    @media @phonex-strict {
-        height: 20px;
-        width: 40px;
+    a {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        @media @phonex-strict {
+            font-size: 9px;
+        }
+        @media @phone-strict {
+            font-size: 11px;
+        }
     }
 }
 
@@ -940,17 +951,7 @@ footer {
     }
 }
 
-.Fix_height {
-    display: flex;
-    margin-top: -22px;
-    margin-left: 60px;
-    @media @phonex-strict {
-        margin-left: 40px;
-        margin-top: -19px;
-    }
-}
-
-.Social_network_signs {
+.SocialNetworkSigns {
     text-align: center;
     margin-top: -43px;
     margin-left: 112px;
@@ -972,37 +973,37 @@ footer {
         margin-top: -30px;
         margin-left: 0;
     }
-}
 
-.Social_network_signs li {
-    margin-top: 18px;
-    display: block;
-    @media @phonex-strict {
-        margin-top: 0;
-        margin-left: 20px;
+    li {
+        margin-top: 18px;
+        display: block;
+        @media @phonex-strict {
+            margin-top: 0;
+            margin-left: 20px;
+        }
+        @media @phone-strict {
+            margin-top: 0;
+            margin-left: 20px;
+        }
+        @media @tablet-strict {
+            margin-top: 20px;
+        }
     }
-    @media @phone-strict {
-        margin-top: 0;
-        margin-left: 20px;
+
+    &_FacebookLog {
+        height: 31px;
+        width: 16px;
     }
-    @media @tablet-strict {
-        margin-top: 20px;
+
+    &_TwitterLog {
+        height: 28px;
+        width: 34px;
     }
-}
 
-.Facebook_log {
-    height: 31px;
-    width: 16px;
-}
-
-.Twitter_log {
-    height: 28px;
-    width: 34px;
-}
-
-.Instagram_log {
-    height: 31px;
-    width: 31px;
+    &_InstagramLog {
+        height: 31px;
+        width: 31px;
+    }
 }
 
 .Line_inside_footer {

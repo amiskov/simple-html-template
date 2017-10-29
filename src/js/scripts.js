@@ -2,24 +2,24 @@ $('.Change_color_one').on('click', function () {
     $(this).toggleClass('active'); 
     $('.Change_color_two').removeClass('active'); 
     $('.Change_color_three').removeClass('active'); 
-    $('.Color_two_invisible').removeClass('Color_two');
-    $('.Color_three_invisible').removeClass('Color_three');
+    $('.Tshitrs_ColorTwo-invisible').removeClass('Tshitrs_ColorTwo');
+    $('.Tshitrs_ColorThree-invisible').removeClass('Tshitrs_ColorThree');
 });
 
 $('.Change_color_two').on('click', function () {
     $(this).toggleClass('active'); 
     $('.Change_color_one').removeClass('active'); 
     $('.Change_color_three').removeClass('active'); 
-    $('.Color_two_invisible').toggleClass('Color_two');
-    $('.Color_three_invisible').removeClass('Color_three');
+    $('.Tshitrs_ColorTwo-invisible').toggleClass('Tshitrs_ColorTwo');
+    $('.Tshitrs_ColorThree-invisible').removeClass('Tshitrs_ColorThree');
 });
 
 $('.Change_color_three').on('click', function () {
     $(this).toggleClass('active'); 
     $('.Change_color_one').removeClass('active'); 
     $('.Change_color_two').removeClass('active'); 
-    $('.Color_three_invisible').toggleClass('Color_three'); 
-    $('.Color_two_invisible').removeClass('Color_two');
+    $('.Tshitrs_ColorThree-invisible').toggleClass('Tshitrs_ColorThree'); 
+    $('.Tshitrs_ColorTwo-invisible').removeClass('Tshitrs_ColorTwo');
 });
 
 $('.Size_form_M active').on('click', function () {
