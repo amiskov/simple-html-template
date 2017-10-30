@@ -15,9 +15,8 @@
 	<header class="header">
 		<div class="container">
 			<div class="hederBlock">
-				<img class="header_shopLogo" src="img/the_shop_logo.svg" alt="Shop`s logo"></img>
-				<a class="header_OggetoLogo" href="http://oggettoweb.ru" >
-					<img src="img/oggetto_logo.svg" alt="Oggeto`s logo"></img></a>
+				<img class="header_shopLogo" src="img/the_shop_logo.svg" alt="Shops logo">
+				<a class="header_OggetoLogo" href="http://oggettoweb.ru"> <img src="img/oggetto_logo.svg" alt="Oggetos logo"></a>
 					<h1 class="header_PhoneContact">+7 (812) 2•12•85•06</h1>
 				</div>
 			</div>
@@ -29,7 +28,7 @@
 				<form class="FormWrapper">
 					<input type="text" required>
 				</form>
-				<img src="img/search.svg" class="FormWrapper_IconSearch"></img>
+				<img src="img/search.svg" alt="Search" class="FormWrapper_IconSearch">
 
 				<% const Main_navigation = [' ', 'OCaml', 'JavaScript', 'Python', 'PHP'] %>
 				<nav class="Nav">
@@ -44,8 +43,8 @@
 				</nav>
 
 				<% const Local_navigation = ['LISP', 'Одежда', ' '] %>
-				<ul class="Nav_MainNavigation">
-					<div class="Nav_MainNavigation_LocalNavigation">
+				<div  class="Nav_MainNavigation">
+					<ul class="Nav_MainNavigation_LocalNavigation">
 						<% Local_navigation.forEach(function(item, index) { %>
 						<li>
 
@@ -56,13 +55,13 @@
 							<% if (index == 2) {%><span class="b">Футболки</span><%}%>
 						</li>
 						<% }); %>
-					</div>
 				</ul>
+				</div>
 
 				<div class="Tshitrs">
-					<img src="img/tshirt_white.jpg" class="Tshitrs_ColorOne"></img>
-					<img src="img/tshirt_green.jpg" class="Tshitrs_ColorTwo-invisible"></img>
-					<img src="img/tshirt_yellow.jpg" class="Tshitrs_ColorThree-invisible"></img>
+					<img alt="TshitrsWhite" src="img/tshirt_white.jpg" class="Tshitrs_ColorOne">
+					<img alt="TshitrsGreen" src="img/tshirt_green.jpg" class="Tshitrs_ColorTwo-invisible">
+					<img alt="TshitrsYellow" src="img/tshirt_yellow.jpg" class="Tshitrs_ColorThree-invisible">
 				</div>
 
 				<h2 class="Section_ProductName">Футболка Alien technology</h2>
@@ -92,7 +91,7 @@
 				</form>
 
 				<div class="Sign_line_block">
-					<img class="Sign_heart" src="img/heart2.svg" alt="Heart"></img>
+					<img class="Sign_heart" src="img/heart2.svg" alt="Heart">
 					<a class="Hold_over" href="#">Отложить на потом</a>
 				</div>
 			</div>
@@ -148,26 +147,26 @@
 					<div class="Bonuses">
 						<ul class="Footer_navigation">
 							<li>
-								<a href="#"><img class="Footer_Deliverylog" src="img/delivery.svg"></img><span class="Footer_FixHeight"> бесплатная доставка от 4000 ₽ </span> </a>
+								<a href="#"><img class="Footer_Deliverylog" alt="Deliverylog" src="img/delivery.svg"><span class="Footer_FixHeight"> бесплатная доставка от 4000 ₽ </span> </a>
 							</li>
 							<li>
-								<a href="#"><img class="Footer_Heartlog" src="img/heart.svg"></img><span class="Footer_FixHeight">пробники в подарок при каждой покупке</span></a>
+								<a href="#"><img class="Footer_Heartlog" alt="Heartlog" src="img/heart.svg"><span class="Footer_FixHeight">пробники в подарок при каждой покупке</span></a>
 							</li>
 							<li>
-								<a href="#"><img class="Footer_Cuplog" src="img/cup.svg"></img><span class="Footer_FixHeight">акции и подарки за покупку</span></a>
+								<a href="#"><img class="Footer_Cuplog" alt="Cuplog" src="img/cup.svg"><span class="Footer_FixHeight">акции и подарки за покупку</span></a>
 							</li>
 						</div>
 					</ul>
 					<ul class="SocialNetworkSigns">
 						<li>
 							<a href="#">
-								<img class="SocialNetworkSigns_FacebookLog" src="img/facebook.svg"></img></a>
+								<img class="SocialNetworkSigns_FacebookLog" alt="Facebook" src="img/facebook.svg"></a>
 							</li>
 							<li><a href="#">
-								<img class="SocialNetworkSigns_TwitterLog" src="img/twitter.svg"></img></a>
+								<img class="SocialNetworkSigns_TwitterLog"  alt="Twitter" src="img/twitter.svg"></a>
 							</li>
 							<li><a href="#">
-								<img class="SocialNetworkSigns_InstagramLog" src="img/instagram.svg"></img></a>
+								<img class="SocialNetworkSigns_InstagramLog" alt="Instagram" src="img/instagram.svg"></a>
 							</li>
 						</ul>
 					</div>
