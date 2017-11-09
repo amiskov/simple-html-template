@@ -14,19 +14,21 @@ body {
 }
 
 .container {
-    width: 1400px;
+    width: 310px;
+    padding: 0 5px;
     margin: 0 auto;
-    @media @phonex-strict {
-        width: 320px;
-    }
-    @media @phone-strict {
+    @media @phone{
         width: 400px;
     }
-    @media @tablet-strict {
+    @media @tablet {
+        padding: 0;
         width: 768px;
     }
-    @media @desktop-strict {
+    @media @desktop{
         width: 991px;
+    }
+    @media @large{
+        width: 1400px;
     }
 }
 
@@ -38,111 +40,88 @@ body {
 }
 
 .header {
-    height: 90px;
-    @media @phonex-strict {
-        height: 45px;
-    }
-    @media @phone-strict {
-        height: 45px;
-    }
-    @media @tablet-strict {
+    height: 40px;
+    @media @tablet{
         height: 70px;
+    }
+    @media @desktop {
+        height: 90px;
     }
 }
 
 .shop-logo {
     display: flex;
-    margin-top: 30px;
-    width: 104px;
-    height: 22px;
-    @media @phonex-strict {
-        margin-top: 15px;
-        width: 72px;
-        height: 15px;
-    }
-    @media @phone-strict {
-        margin-top: 15px;
-        width: 72px;
-        height: 15px;
-    }
-    @media @tablet-strict {
+    margin-top: 15px;
+    max-width: 73px;
+    max-height: 15px;
+    @media @tablet{
+        max-width: 104px;
+        max-height: 22px;
         margin-top: 9px;
     }
+    @media @desktop {
+        margin-top: 30px;
+    }
 
-    & svg:hover{
+    &__svg:hover{
         fill-opacity: .5;
     }
 }
 
 .oggeto-logo {
     display: flex;
-    margin: -37px 48%;
-    width: 49px;
-    height: 49px;
-    @media @phonex-strict {
-        margin: -20px 35%;
-        width: 34px;
-        height: 34px;
-    }
-    @media @phone-strict {
+    margin: -20px 35%;
+    max-width: 34px;
+    max-height: 34px;
+    @media @phone {
         margin: -20px 38%;
-        width: 34px;
-        height: 34px;
     }
-    @media @tablet-strict {
-        margin: 0 200px;
+    @media @tablet {
+        margin: 0 26%;
+        max-width: 49px;
+        max-height: 49px;
+    }
+    @media @desktop {
+        margin: -37px 43%;
+    }
+    @media @large {
+        margin: -37px 48%;
     }
 
-    & svg:hover{
+    &__svg:hover{
         fill-opacity: .5;
     }
 }
 
 .phone {
-    margin-top: 0;
+    margin-top: -10px;
     float: right;
     font-weight: bold;
-    font-size: 24px;
     color: #c00;
-    @media @phonex-strict {
-        margin-left: 105px;
-        font-size: 15px;
-        margin-top: -10px;
-    }
-    @media @phone-strict {
-        margin-left: 103px;
-        font-size: 15px;
-        margin-top: -10px;
-    }
-    @media @tablet-strict {
+    font-size: 15px;
+    @media @tablet{
         margin-top: 4px;
+        font-size: 24px;
     }
 }
 
 .search {
     border: 1px solid #d9d9d4;
     margin-top: -10px;
-    width: 278px;
-    height: 36px;
     float: right;
-    @media @phonex-strict {
-        width: 34px;
-        height: 34px;
-    }
-    @media @phone-strict {
-        width: 36px;
+    width: 34px;
+    height: 34px;
+    @media @tablet {
+        width: 278px;
         height: 36px;
     }
 
     &__input {
-        width: 278px;
         height: 34px;
+        width: 34px;
         border: none;
-        @media @phonex-strict {
-            width: 34px;
-        }
-        @media @phone-strict {
-            width: 36px;
+        @media @tablet {
+            width: 278px;
         }
     }
 
@@ -150,125 +129,20 @@ body {
         width: 16px;
         height: 16px;
         float: right;
-        margin-right: -280px;
-        @media @phonex-strict {
-            margin-right: -26px;
-        }
-        @media @phone-strict {
-            margin-right: -28px;
+        margin-right: -26px;
+        @media @tablet {
+            margin-right: -280px;
         }
     }
 }
 
 .line-under-header {
-    margin-top: -38px;
     height: 51px;
     width: 100%;
     border: 1px solid #d9d9d4;
     background: #f2f2ed;
-    @media @phonex-strict {
-        margin-top: 0;
-    }
-    @media @phone-strict {
-        margin-top: 0;
-    }
-    @media @tablet-strict {
-        margin-top: 0;
-    }
-}
-
-.section {
-    height: 956px;
-    @media @phonex-strict {
-        height: 700px;
-    }
-    @media @phone-strict {
-        height: 780px;
-    }
-    @media @tablet-strict {
-        height: 700px;
-    }
-    @media @desktop-strict{
-        height: 780px;
-    }
-
-    &__product-name {
-        margin-left: 764px;
-        font-size: 36px;
-        color: black;
-        margin-top: -7px;
-        @media @phonex-strict {
-            border: 1px solid #d9d9d4;
-            background: #f2f2ed;
-            text-align: center;
-            margin-left: 0;
-            font-size: 25px;
-            margin-top: -10px;
-        }
-        @media @phone-strict {
-            border: 1px solid #d9d9d4;
-            background: #f2f2ed;
-            text-align: center;
-            margin-left: 0;
-            font-size: 30px;
-            margin-top: -10px;
-        }
-        @media @tablet-strict {
-            margin-left: 520px;
-            font-size: 34px;
-        }
-        @media @desktop-strict {
-            margin-left: 570px;
-            font-size: 34px;
-        }
-    }
-
-    &__product-description {
-        margin-left: 764px;
-        margin-top: -19px;
-        @media @phonex-strict {
-            margin-top: -15px;
-            text-align: center;
-            margin-left: 0;
-        }
-        @media @phone-strict {
-            text-align: center;
-            margin-left: 0;
-        }
-        @media @tablet-strict {
-            margin-left: 520px;
-        }
-        @media @desktop-strict {
-            margin-left: 570px;
-        }
-    }
-
-    &__product-price {
-        font-size: 36px;
-        color: #c00;
-        margin-left: 764px;
-        margin-top: 24px;
-        @media @phonex-strict {
-            float: right;
-            font-size: 25px;
-            margin-left: 0;
-            margin-top: 338px;
-        }
-        @media @phone-strict {
-            float: right;
-            font-size: 30px;
-            margin-left: 0;
-            margin-top: 430px;
-        }
-        @media @tablet-strict {
-            font-size: 34px;
-            margin-left: 520px;
-            margin-top: -10px;
-        }
-        @media @desktop-strict {
-            margin-left: 570px;
-            margin-top: -10px;
-        }
+    @media @desktop {
+        margin-top: -38px;
     }
 }
 
@@ -284,67 +158,163 @@ body {
     &__navigation {
         float: left;
         display: block;
-        margin-right: 20px;
-        @media @phonex-strict {
-            margin-right: 8px;
+        font-size: 14px;
+        margin-right: 10px;
+        @media @phone {
+            margin-right: 20px;
+            font-size: 16px;
         }
     }
 
     &__link {
-        font-size: 16px;
+        font-size: 14px;
         color: #c00;
+        @media @phone {
+            font-size: 16px;
+        }
     }
 }
 
 .local-navigation {
     display: flex;
     margin-left: -40px;
-    margin-top: 65px;
-    @media @phonex-strict {
-        margin-top: 20px;
-    }
-    @media @phone-strict {
-        margin-top: 25px;
-    }
-    @media @tablet-strict {
-        margin-top: 30px;
+    margin-top: 30px;
+    @media @desktop {
+        margin-top: 65px;
     }
 
     &__navigation {
+        font-size: 14px;
         float: left;
         display: block;
         margin-right: 4px;
+        @media @phone {
+            font-size: 16px;
+        }
     }
 
     &__link {
-        font-size: 16px;
+        font-size: 14px;
         color: #c00;
+        @media @phone {
+            font-size: 16px;
+        }
     }
 }
 
+.product-name {
+    color: black;
+    border: 1px solid #d9d9d4;
+    background: #f2f2ed;
+    text-align: center;
+    font-size: 25px;
+    margin-top: -10px;
+
+    @media @phone-strict {
+        font-size: 30px;
+    }
+    @media @tablet {
+        margin-left: 520px;
+        font-size: 34px;
+        margin-top: -7px;
+        background: none;
+        border: none;
+        text-align: left;
+    }
+    @media @desktop {
+        margin-left: 570px;
+        font-size: 34px;
+    }
+    @media @large {
+        margin-left: 764px;
+        font-size: 36px;
+    }
+}
+
+.product-description {
+    margin-top: -15px;
+    text-align: center;
+    margin-left: 0;
+    @media @tablet{
+        margin-left: 520px;
+        margin-top: -19px;
+        text-align: left;
+    }
+    @media @desktop{
+        margin-left: 570px;
+    }
+    @media @large {
+        margin-left: 764px;
+    }
+}
+
+.product-price {
+    color: #c00;
+    float: right;
+    font-size: 25px;
+    margin-left: 0;
+    margin-top: 338px;
+    @media @phone {
+        font-size: 30px;
+        margin-top: 430px;
+    }
+    @media @tablet {
+        float: none;
+        font-size: 34px;
+        margin-left: 520px;
+        margin-top: -10px;
+    }
+    @media @desktop {
+        margin-left: 570px;
+        font-size: 36px;
+    }
+    @media @large {
+        margin-left: 764px;
+        margin-top: 24px;
+    }
+}
+
+.section {
+    height: 700px;
+    @media @phone {
+        height: 780px;
+    }
+    @media @tablet {
+        height: 700px;
+    }
+    @media @desktop {
+        height: 780px;
+    }
+    @media @large {
+        height: 956px;
+    }
+}
 
 .tshirts {
     margin-top: 20px;
 
     img {
         position: absolute;
-        @media @phonex-strict {
-            margin-top: 88px;
-            width: 320px;
-            height: 320px;
-        }
-        @media @phone-strict {
+        margin-top: 88px;
+        width: 320px;
+        height: 320px;
+        @media @phone {
             margin-top: 80px;
             width: 400px;
             height: 400px;
         }
-        @media @tablet-strict {
-            width: 500px;
-            height: 500px;
+        @media @tablet{
+            margin-top: 0;
+            max-width: 500px;
+            max-height: 500px;
         }
-        @media @desktop-strict {
+        @media @desktop {
             width: 550px;
             height: 550px;
+        }
+        @media @large {
+            max-width: 600px;
+            max-height: 600px;
         }
     }
 }
