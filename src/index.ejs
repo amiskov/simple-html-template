@@ -4,7 +4,7 @@
 	<link rel="shortcut icon" href="img/flower.png" type="image/png">
 	<meta charset="UTF-8">
 	<meta name="viewport"
-	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>The_shop</title>
 	<link rel="stylesheet" href="css/main.css">
@@ -78,7 +78,7 @@
 				<h2 class="product-name">Футболка Alien technology</h2>
 				<p class="product-description">Состав: 100% хлопок, динамическая типизация, польская нотация. Производство: Россия. </p> 
 				<h3 class="product-price">1500&#8381;</h3>
-				<p class="size-form__size">Размер: </p> 
+				<p class="product-size">Размер: </p> 
 				<form class="size-line-block">
 					<div class="size-form">
 						<p class="size-form__size-sign">S</p>
@@ -93,9 +93,9 @@
 				<p class="color-line-block__color">Цвет:</p> 
 
 				<form class="color-line-block">
-					<div class="change-color-one_active"> </div>
-					<div class="change-color-two"> </div>
-					<div class="change-color-three"> </div>
+					<div class="change-color change-color_active change-color__1"> </div>
+					<div class="change-color change-color__2"> </div>
+					<div class="change-color change-color__3"> </div>
 				</form>
 				<form class="button">
 					<button class="button-buy">Купить</button>
@@ -134,6 +134,7 @@
 							<% }); %>
 						</ul>
 					</div>
+			
 					<% const aboutCompany = ['О нас', 'Контакты', 'Вакансии', 'Партнерам'] %>
 					<div class="footer__about-company">
 						<ul class="footer-navigation">
