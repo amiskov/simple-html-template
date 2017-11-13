@@ -258,32 +258,46 @@ body {
     }
 }
 
-.product-price {
-    color: #c00;
-    float: right;
-    font-size: 25px;
-    margin-left: 0;
-    margin-top: 110%;
-    @media @phone {
-        font-size: 30px;
-        margin-top: 105%;
-    }
-    @media @break {
-        margin-top: 110%;
-        font-size: 34px;
-    }
-    @media @tablet {
-        float: none;
-        margin-left: 520px;
-        margin-top: -10px;
-    }
-    @media @desktop {
-        margin-left: 58%;
-        font-size: 36px;
-    }
+.price {
+    margin-top: 0;
     @media @large {
-        margin-left: 764px;
-        margin-top: 24px;
+        margin-top: 30px;
+    }
+
+    &__currency {
+        font-size: 36px;
+        color: #c00;
+        font-weight: bold;
+    }
+
+    &__val {
+        font-weight: bold;
+        color: #c00;
+        float: right;
+        font-size: 25px;
+        margin-left: 0;
+        margin-top: 110%;
+        @media @phone {
+            font-size: 30px;
+            margin-top: 105%;
+        }
+        @media @break {
+            margin-top: 110%;
+            font-size: 34px;
+        }
+        @media @tablet {
+            float: none;
+            margin-left: 520px;
+            margin-top: -10px;
+        }
+        @media @desktop {
+            margin-left: 58%;
+            font-size: 36px;
+        }
+        @media @large {
+            margin-left: 764px;
+            margin-top: 24px;
+        }
     }
 }
 
@@ -302,7 +316,7 @@ body {
         margin-top: -30px;
     }
     @media @large {
-        margin-top: -10px;
+        margin-top: 25px;
         margin-left: 764px;
     }
 }
@@ -371,19 +385,6 @@ body {
 
 .size-form {
     text-align: center;
-    border: 1px solid black;
-    background: white;
-    margin-right: 10px;
-    height: 42px;
-    width: 42px;
-    @media @phone {
-        height: 45px;
-        width: 45px;
-    }
-    @media @break {
-        height: 65px;
-        width: 65px;
-    }
 
     &_active {
         text-align: center;
@@ -414,6 +415,38 @@ body {
             font-size: 36px;
             margin-top: 10px;
         }
+    }
+}
+
+.product-prop {
+    list-style-type: none;
+    border: 1px solid black;
+    background: white;
+    margin-right: 10px;
+    height: 42px;
+    width: 42px;
+    @media @phone {
+        height: 45px;
+        width: 45px;
+    }
+    @media @break {
+        height: 65px;
+        width: 65px;
+    }
+}
+
+.product-prop:hover {
+    border: 3px solid red;
+    margin-right: 10px;
+    height: 38px;
+    width: 38px;
+    @media @phone {
+        height: 41px;
+        width: 41px;
+    }
+    @media @break {
+        height: 61px;
+        width: 61px;
     }
 }
 
@@ -455,18 +488,6 @@ body {
 
 .change-color {
     text-align: center;
-    height: 42px;
-    width: 42px;
-    border: 1px solid black;
-    margin-right: 10px;
-    @media @phone {
-        height: 45px;
-        width: 45px;
-    }
-    @media @break {
-        height: 65px;
-        width: 65px;
-    }
 
     &__1 {
         background: white;
@@ -520,7 +541,7 @@ body {
         margin-left: 58%;
     }
     @media @large {
-        margin-top: 44px;
+        margin-top: 24px;
         margin-left: 764px;
         height: 80px;
         width: 200px;
