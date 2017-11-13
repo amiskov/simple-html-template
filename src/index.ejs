@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<link rel="shortcut icon" href="img/flower.png" type="image/png">
 	<meta charset="UTF-8">
 	<meta name="viewport"
-	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>The_shop</title>
 	<link rel="stylesheet" href="css/main.css">
@@ -14,176 +15,191 @@
 
 	<header class="header">
 		<div class="container">
-			<div class="hederBlock">
-				<img class="header_shopLogo" src="img/the_shop_logo.svg" alt="Shops logo">
-				<a class="header_OggetoLogo" href="http://oggettoweb.ru"> <img src="img/oggetto_logo.svg" alt="Oggetos logo"></a>
-					<h1 class="header_PhoneContact">+7 (812) 2•12•85•06</h1>
+			<div class="header-block">
+				<div class="shop-logo" > 
+					<svg class= "shop-logo__svg">
+						<a class="shop-logo__link" href="http://oggettoweb.ru">
+					<%-include('img/the_shop_logo.svg')%>
+                     </a></svg>  </div>
+                    <div class="oggeto-logo">
+				
+					<svg class="oggeto-logo__svg">
+						<a class="oggeto-logo__link" href="http://oggettoweb.ru"> 
+					<%-include('img/oggetto_logo.svg')%>
+                    </a> </svg> 
+                 </div> 
+					<p class="phone">+7 (812) 2•12•85•06</p>
 				</div>
 			</div>
 		</header>
 
-		<section class="Section">
-			<div class="Section_LineUnderHeader"></div>
+		<section class="section">
+			<div class="line-under-header"></div>
 			<div class="container">
-				<form class="FormWrapper">
-					<input type="text" required>
+				<form class="search" name="Search">
+					<input class="search__input" type="text" required>
 				</form>
-				<img src="img/search.svg" alt="Search" class="FormWrapper_IconSearch">
+				<img src="img/search.svg" alt="Search" class="search__icon-search">
 
-				<% const Main_navigation = [' ', 'OCaml', 'JavaScript', 'Python', 'PHP'] %>
-				<nav class="Nav">
-					<ul class="Nav_MainNavigation">
-						<% Main_navigation.forEach(function(navigation, index) { %>
-						<li>
-							<a href="#"><%= navigation %></a>
+				<% const mainNavigation = [' ', 'OCaml', 'JavaScript', 'Python', 'PHP'] %>
+				<nav class="nav">
+					<ul class="main-navigation">
+						<% mainNavigation.forEach(function(navigation, index) { %>
+						<li class="main-navigation__navigation">
+							<a class="main-navigation__link" href="#"><%= navigation %></a>
 							<% if (index == 0) {%><b>LISP</b><%}%>
 						</li>
 						<% }); %>
 					</ul>
 				</nav>
 
-				<% const Local_navigation = ['LISP', 'Одежда', ' '] %>
-				<div  class="Nav_MainNavigation">
-					<ul class="Nav_MainNavigation_LocalNavigation">
-						<% Local_navigation.forEach(function(item, index) { %>
-						<li>
+				<% const localNavigation = ['LISP', 'Одежда', ' '] %>
 
-							<a href="#"><%= item %></a>
-							<% if(index < (Local_navigation.length - 1)) { %>
-							<span>/</span>
-							<% } %>
-							<% if (index == 2) {%><span class="b">Футболки</span><%}%>
-						</li>
-						<% }); %>
+				<ul class="local-navigation">
+					<% localNavigation.forEach(function(item, index) { %>
+					<li class="local-navigation__navigation">
+
+						<a class="local-navigation__link" href="#"><%= item %></a>
+						<% if(index < (localNavigation.length - 1)) { %>
+						<span class="local-navigation__slash">/</span>
+						<% } %>
+						<% if (index == 2) {%><span class="b">Футболки</span><%}%>
+					</li>
+					<% }); %>
 				</ul>
+
+
+				<div class="tshirts">
+					<img alt="TshitrsWhite" src="img/tshirt_white.jpg" class="tshirt tshirt_active">
+					<img alt="TshitrsGreen" src="img/tshirt_green.jpg" class="tshirt">
+					<img alt="TshitrsYellow" src="img/tshirt_yellow.jpg" class="tshirt">
 				</div>
 
-				<div class="Tshitrs">
-					<img alt="TshitrsWhite" src="img/tshirt_white.jpg" class="Tshitrs_ColorOne">
-					<img alt="TshitrsGreen" src="img/tshirt_green.jpg" class="Tshitrs_ColorTwo-invisible">
-					<img alt="TshitrsYellow" src="img/tshirt_yellow.jpg" class="Tshitrs_ColorThree-invisible">
-				</div>
+				<h2 class="product-name">Футболка Alien technology</h2>
+				<p class="product-description">Состав: 100% хлопок, динамическая типизация, польская нотация. Производство: Россия. </p> 
+				<h3 class="product-price">1500&#8381;</h3>
+				<p class="product-size">Размер: </p> 
+				<form class="size-line-block">
+					<div class="size-form">
+						<p class="size-form__size-sign">S</p>
+					</div>
+					<div class="size-form_active">
+						<div class="size-form__size-sign">M</div>
+					</div>
+					<div class="size-form">
+						<div class="size-form__size-sign">L</div>
+					</div>
+				</form>
+				<p class="color-line-block__color">Цвет:</p> 
 
-				<h2 class="Section_ProductName">Футболка Alien technology</h2>
-				<p class="Section_ProductDescription">Состав: 100% хлопок, динамическая типизация, польская нотация. Производство: Россия. </p> 
-				<h3 class="Section_ProductPrice">1500&#8381;</h3>
-				<p class="Section_Size">Размер: </p> 
-				<div class="Size_line_block">
-					<div class="Size_form_S">
-						<div class="Size_sign">S</div>
-					</div>
-					<div class="Size_form_M active">
-						<div class="Size_sign">M</div>
-					</div>
-					<div class="Size_form_L">
-						<div class="Size_sign">L</div>
-					</div>
-				</div>
-				<p class="Section_Color">Цвет:</p> 
-
-				<div class="Color_line_block">
-					<div class="Change_color_one active"> </div>
-					<div class="Change_color_two"> </div>
-					<div class="Change_color_three"> </div>
-				</div>
-				<form>
-					<Button class="Button_buy">Купить</Button>
+				<form class="color-line-block">
+					<div class="change-color change-color_active change-color__1"> </div>
+					<div class="change-color change-color__2"> </div>
+					<div class="change-color change-color__3"> </div>
+				</form>
+				<form class="button">
+					<button class="button-buy">Купить</button>
 				</form>
 
-				<div class="Sign_line_block">
-					<img class="Sign_heart" src="img/heart2.svg" alt="Heart">
-					<a class="Hold_over" href="#">Отложить на потом</a>
+				<div class="sign-line-block">
+					<img class="sign-line-block__sign-heart" src="img/heart2.svg" alt="Heart">
+					<a class="sign-line-block__hold-over" href="#">Отложить на потом</a>
 				</div>
 			</div>
 		</section>
-		<footer class="Footer">
+		<footer class="footer">
 			<div class="container">
-				<div class="Footer_TitleNavigation">
-					<p class="Footer_p"> Сервис и поддержка </p>
-					<p class="Footer_TitleNavigation2 Footer_p"> О компании </p>
+				<div class="footer__title-navigation">
+					<p class="footer__p"> Сервис и поддержка </p>
+					<p class="footer__title-navigation2 footer__p"> О компании </p>
 				</div>
 				
-				<% const Service_Support = ['Как сделать заказ', 'Возврат товара', 'Публичная оферта', 'Доставка'] %>
-				<div class="Footer_ServiceSupport">
-					<ul class="Footer_navigation">
-						<% Service_Support.forEach(function(point) { %>
-						<li>
-							<a href="#" class="menu__link"><%= point %></a>
+				<% const serviceSupport = ['Как сделать заказ', 'Возврат товара', 'Публичная оферта', 'Доставка'] %>
+				<div class="footer__service-support">
+					<ul class="footer-navigation">
+						<% serviceSupport.forEach(function(point) { %>
+						<li class="footer-navigation__point">
+							<a href="#" class="footer-navigation__link"><%= point %></a>
 						</li>
 						<% }); %>
 					</ul>
 
-					<% const Column2_Service_Support = ['Способы оплаты', 'Правила продажи', 'Возврат денежных средств', 'Вопросы и ответы'] %>
-					<div class="Footer_Column2ServiceSupport">
-						<ul class="Footer_navigation">
-							<% Column2_Service_Support.forEach(function(point) { %>
-							<li>
-								<a href="#"><%= point %></a>
+					<% const column2ServiceSupport = ['Способы оплаты', 'Правила продажи', 'Возврат денежных средств', 'Вопросы и ответы'] %>
+					<div class="footer__column2-service-support">
+						<ul class="footer-navigation">
+							<% column2ServiceSupport.forEach(function(point) { %>
+							<li class ="footer-navigation__point">
+								<a href="#" class="footer-navigation__link"><%= point %></a>
 							</li>
 							<% }); %>
 						</ul>
 					</div>
-					<% const About_company = ['О нас', 'Контакты', 'Вакансии', 'Партнерам'] %>
-					<div class="Footer_AboutCompany">
-						<ul class="Footer_navigation">
-							<% About_company.forEach(function(point) { %>
-							<li>
-								<a href="#"><%= point %></a>
+			
+					<% const aboutCompany = ['О нас', 'Контакты', 'Вакансии', 'Партнерам'] %>
+					<div class="footer__about-company">
+						<ul class="footer-navigation">
+							<% aboutCompany.forEach(function(point) { %>
+							<li class="footer-navigation__point">
+								<a href="#" class="footer-navigation__link"><%= point %></a>
 							</li>
 							<% }); %>
 						</ul>
 					</div>
-					<% const Column2_About_company = ['Сертификаты', 'Преимущества', 'Наши скидки'] %>
-					<div class="Footer_Column2AboutCompany">
-						<ul class="Footer_navigation">
-							<% Column2_About_company.forEach(function(point) { %>
-							<li>
-								<a href="#"><%= point %></a>
+					<% const column2AboutCompany = ['Сертификаты', 'Преимущества', 'Наши скидки'] %>
+					<div class="footer__column2-about-company">
+						<ul class="footer-navigation">
+							<% column2AboutCompany.forEach(function(point) { %>
+							<li class ="footer-navigation__point">
+								<a href="#" class="footer-navigation__link"><%= point %></a>
 							</li>
 							<% }); %>
 						</ul>
 					</div>
 					
-					<div class="Bonuses">
-						<ul class="Footer_navigation">
-							<li>
-								<a href="#"><img class="Footer_Deliverylog" alt="Deliverylog" src="img/delivery.svg"><span class="Footer_FixHeight"> бесплатная доставка от 4000 ₽ </span> </a>
+					
+					<ul class="bonuses">
+						<li class="bonuses__navigation">
+							<a class="bonuses__link" href="#">
+								<img class="bonuses__delivery-log" alt="Deliverylog" src="img/delivery.svg">
+								<span class="bonuses__fix-height"> бесплатная доставка от 4000 ₽ </span> </a>
 							</li>
-							<li>
-								<a href="#"><img class="Footer_Heartlog" alt="Heartlog" src="img/heart.svg"><span class="Footer_FixHeight">пробники в подарок при каждой покупке</span></a>
+							<li class="bonuses__navigation">
+								<a class="bonuses__link" href="#"><img class="bonuses__heart-log" alt="Heartlog" src="img/heart.svg"><span class="bonuses__fix-height">пробники в подарок при каждой покупке</span></a>
 							</li>
-							<li>
-								<a href="#"><img class="Footer_Cuplog" alt="Cuplog" src="img/cup.svg"><span class="Footer_FixHeight">акции и подарки за покупку</span></a>
-							</li>
-						</ul>
-						</div>
-					<ul class="SocialNetworkSigns">
-						<li>
-							<a href="#">
-								<img class="SocialNetworkSigns_FacebookLog" alt="Facebook" src="img/facebook.svg"></a>
-							</li>
-							<li><a href="#">
-								<img class="SocialNetworkSigns_TwitterLog"  alt="Twitter" src="img/twitter.svg"></a>
-							</li>
-							<li><a href="#">
-								<img class="SocialNetworkSigns_InstagramLog" alt="Instagram" src="img/instagram.svg"></a>
+							<li class="bonuses__navigation">
+								<a class="bonuses__link" href="#"><img class="bonuses__сup-log" alt="Cuplog" src="img/cup.svg"><span class="bonuses__fix-height">акции и подарки за покупку</span></a>
 							</li>
 						</ul>
-					</div>
-				</div>
-				<div class="Line_inside_footer"></div>
-				<div class="container">
-					<% const InformationAboutShop = ['2005-2017 © 7h35h0p.ru — модный интернет-магазин одежды, обуви и аксессуаров.', 'Все права защищены. Доставка по всей России!'] %>
-					<ul class="Footer_navigation">
-						<% InformationAboutShop.forEach(function(point) { %>
-						<li>
-							<p class="Footer_p_2"><%= point %></p>
-						</li>
-						<% }); %>
-					</ul>
-				</div>
-		</footer>
 
-		<script src="js/scripts.js"></script>
-	</body>
-	</html>
+						<ul class="social-network-signs">
+							<li class="social-network-signs__signs">
+								<a class="social-network-signs__link" href="#">
+									<img class="social-network-signs__facebook-log" alt="Facebook" src="img/facebook.svg"></a>
+								</li>
+								<li class="social-network-signs__signs">
+									<a class="social-network-signs__link" href="#">
+										<img class="social-network-signs__twitter-log"  alt="Twitter" src="img/twitter.svg"></a>
+									</li>
+									<li class="social-network-signs__signs">
+										<a class="social-network-signs__link" href="#">
+											<img class="social-network-signs__instagram-log" alt="Instagram" src="img/instagram.svg"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="line-inside-footer "></div>
+							<div class="container">
+								<% const InformationAboutShop = ['2005-2017 © 7h35h0p.ru — модный интернет-магазин одежды, обуви и аксессуаров.', 'Все права защищены. Доставка по всей России!'] %>
+								<ul class="footer-navigation">
+									<% InformationAboutShop.forEach(function(point) { %>
+									<li class="footer-navigation__point">
+										<p class="footer-p-2"><%= point %></p>
+									</li>
+									<% }); %>
+								</ul>
+							</div>
+						</footer>
+
+						<script src="js/scripts.js"></script>
+					</body>
+					</html>
