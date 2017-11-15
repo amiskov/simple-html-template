@@ -550,13 +550,14 @@ body {
 }
 
 .sign-line-block {
+    display: table;
     margin-top: -15px;
-    float: right;
     font-size: 14px;
     @media @phone {
         margin-top: -18px;
     }
     @media @tablet {
+        font-size: 16px;
         float: none;
         margin-top: 5px;
         margin-left: 10px;
@@ -571,6 +572,7 @@ body {
     }
 
     &__sign-heart {
+        vertical-align: middle;
         margin-left: 0;
         height: 18px;
         width: 18px;
@@ -579,8 +581,8 @@ body {
             width: 20px;
         }
         @media @break {
-            width: 38px;
-            height: 35px;
+            width: 28px;
+            height: 25px;
         }
         @media @tablet {
             margin-left: 520px;
@@ -594,14 +596,7 @@ body {
     }
 
     &__hold-over {
-        color: #999;
-        font-weight: bold;
-        @media @phone {
-            margin: auto 5;
-        }
-        @media @tablet {
-            margin: auto 7px;
-        }
+        color: #b3b3b3;
     }
 }
 
