@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body>
+<body id="doc">
 
 	<header class="header">
 		<div class="container">
@@ -70,33 +70,29 @@
 
 
 				<div class="tshirts">
-					<img alt="TshitrsWhite" src="img/tshirt_white.jpg" class="tshirt tshirt_active">
-					<img alt="TshitrsGreen" src="img/tshirt_green.jpg" class="tshirt">
-					<img alt="TshitrsYellow" src="img/tshirt_yellow.jpg" class="tshirt">
+					<img id="productPicture" src="img/tshirt_white.jpg" alt="Tshitr">
 				</div>
 
 				<h2 class="product-name">Футболка Alien technology</h2>
 				<p class="product-description">Состав: 100% хлопок, динамическая типизация, польская нотация. Производство: Россия. </p> 
-				<h3 class="product-price">1500&#8381;</h3>
+				<div class="price">
+				<span class="price__val" id="priceVal">1500</span><span class="price__currency">&#8381;</span>
 				<p class="product-size">Размер: </p> 
-				<form class="size-line-block">
-					<div class="size-form">
-						<p class="size-form__size-sign">S</p>
-					</div>
-					<div class="size-form_active">
-						<div class="size-form__size-sign">M</div>
-					</div>
-					<div class="size-form">
-						<div class="size-form__size-sign">L</div>
-					</div>
-				</form>
+					<ul id="sizeList" class="size-line-block">
+            <li class="product-prop size-form" data-type="size" data-value="s">
+            	<p class="size-form__size-sign" data-type="size" data-value="s">S</p></li>
+            <li class="product-prop size-form" data-type="size" data-value="m">
+            	<p class="size-form__size-sign" data-type="size" data-value="m">M</p></li>
+            <li class="product-prop size-form" data-type="size" data-value="l">
+            	<p class="size-form__size-sign" data-type="size" data-value="l">L</p></li>
+        			</ul>
 				<p class="color-line-block__color">Цвет:</p> 
+				<ul id="colorList" class="color-line-block">
+					<li class="change-color product-prop change-color__1" data-type="color" data-value="white"> </li>
+					<li class="change-color product-prop change-color__2" data-type="color" data-value="green"> </li>
+					<li class="change-color product-prop change-color__3" data-type="color" data-value="yellow"> </li>
+				</ul>
 
-				<form class="color-line-block">
-					<div class="change-color change-color_active change-color__1"> </div>
-					<div class="change-color change-color__2"> </div>
-					<div class="change-color change-color__3"> </div>
-				</form>
 				<form class="button">
 					<button class="button-buy">Купить</button>
 				</form>
@@ -200,6 +196,7 @@
 							</div>
 						</footer>
 
-						<script src="js/scripts.js"></script>
+
+						<script  type="module" src="js/scripts.js"></script>
 					</body>
 					</html>
