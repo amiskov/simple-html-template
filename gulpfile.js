@@ -40,9 +40,11 @@ gulp.task('js', () => {
 });
 
 gulp.task('html', () => {
-    return gulp.src('src/index.ejs')
+    return gulp.src('src/**/*.ejs')
         .pipe(ejs().on('error', gutil.log))
-        .pipe(rename('index.html'))
+        .pipe(rename((path) => {
+            path.extname = '.html';
+        }))
         .pipe(gulp.dest('./dist'));
 });
 
