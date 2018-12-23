@@ -5,8 +5,9 @@
 
 ## Запуск
 ```bash
-> npm install # установите зависимости
-> npm start   # запустите сборку
+> npm install gulp-cli -g # установить бинарник Гальпа глобально
+> npm install             # установите зависимости
+> npm start               # запустите сборку
 ```
 
 Проект будет доступен по адресу `http://localhost:3000`.
@@ -41,4 +42,4 @@
 }
 ```
 
-См. так же [руководство по БЭМ](http://academy.oggettoweb.com/learn/bem).
+См. так же [руководство по БЭМ](http://andreymiskov.ru/frontend-handbook/bem/).
